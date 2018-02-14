@@ -5,9 +5,11 @@ const app = express();
 dotenv.config();
 
 
-app.get('/', (req, res) => {
-  res.send("Hello World");
-});
+app.use(express.static(__dirname + "/../client"));
+
+// app.get('/', (req, res) => {
+//   res.send("Hello World");
+// });
 
 const port = process.env.port || 3000;
 app.listen(port);
