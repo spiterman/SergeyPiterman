@@ -5,7 +5,7 @@ const app = express();
 dotenv.config();
 
 
-app.use(express.static(__dirname + "/../client"));
+app.use(express.static(__dirname + "/client"));
 
 // app.get('/', (req, res) => {
 //   res.send("Hello World");
